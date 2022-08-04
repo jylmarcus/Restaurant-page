@@ -6,6 +6,8 @@ function createHeader(name) {
     restaurantName.innerHTML = name;
 
     header.appendChild(restaurantName);
-    
+
     return header;
 }
+
+export default createHeader;
