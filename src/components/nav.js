@@ -1,7 +1,7 @@
 import createNavButton from "./navButtons";
 
 function createNav(id) {
-    const nav = docment.createElement('nav');
+    const nav = document.createElement('nav');
     nav.setAttribute('id', id);
 
     const homeButton = createNavButton('home');
