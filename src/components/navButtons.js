@@ -1,4 +1,5 @@
 function createNavButton(name){
+
     const button = document.createElement('button');
     button.classList.add("navButton");
     button.setAttribute('type','button');
@@ -7,3 +8,5 @@ function createNavButton(name){
 
     return button;
 }
+
+export default createNavButton;
