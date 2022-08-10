@@ -17,4 +17,4 @@ function initialize(){
     loadHome();
 };
 
-export default initialize();
+export default initialize;
