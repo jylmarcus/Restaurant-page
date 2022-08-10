@@ -32,9 +32,18 @@ function createMenu(){
     const menu = document.createElement('section');
     menu.classList.add('tabSection');
 
-    createMenuItem(
-        
-    )
+    const menuItems = [
+        createMenuItem(
+            'https://fanfest.finalfantasyxiv.com/2021/static/a27663f921f2f2792d72cfa44337ce27/f0a0a/moogle-honey-toast.webp',
+            'an image of moogle honey toast',
+            'moogle honey toast',
+            '900 gil'
+        )
+    ];
+
+    menuItems.forEach((item) => {
+        menu.appendChild(item);
+    });
 
     return menu;
 }
