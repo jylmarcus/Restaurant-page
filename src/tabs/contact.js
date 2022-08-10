@@ -23,3 +23,5 @@ function loadContact(){
     tabContent.appendChild(contact);
 
 }
+
+export default loadContact;

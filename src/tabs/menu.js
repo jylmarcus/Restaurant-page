@@ -57,3 +57,5 @@ function loadMenu(){
     tabContent.appendChild(menu);
 
 }
+
+export default loadMenu;

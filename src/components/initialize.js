@@ -1,6 +1,7 @@
 import createHeader from "./header";
 import createNav from "./nav";
 import createTabContent from "./tabContent";
+import loadHome from "../tabs/home";
 
 function initialize(){
     const content = document.getElementById('content');
@@ -12,6 +13,8 @@ function initialize(){
     content.appendChild(header);
     content.appendChild(nav);
     content.appendChild(tabContent);
+
+    loadHome();
 };
 
 export default initialize();

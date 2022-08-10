@@ -25,3 +25,5 @@ function loadHome(){
     tabContent.appendChild(home);
 
 }
+
+export default loadHome;
