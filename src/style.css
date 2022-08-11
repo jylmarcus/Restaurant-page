@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: inline-block;
+}
+
+#content {
+    background-image: url(./assets/noise-img.png);
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    border: 10px groove #c185a4;
+    /*border-image: linear-gradient(#33001a, #74636b) 1; */
+}
