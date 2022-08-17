@@ -9,7 +9,7 @@ body {
 
 #content {
     background-image: url(./assets/noise-img.png);
-    width: 80%;
+    width: 100vw;
     height: 100vh;
     margin: 0 auto;
     border: 10px groove #c185a4;
@@ -57,10 +57,59 @@ nav button{
     text-shadow: 0 0 10px black;
     background-image: linear-gradient(to bottom right, #2323fb, #000066);
     flex-grow: 1;
+    align-self: stretch;
 }
 
 .tabSection{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.menuSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.menuSection .menuItem {
+    border: ridge 0.5rem white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menuItem .itemText .itemSeperator{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.menuSection .menuItem img {
+    max-height: 6rem;
+    width: auto;
+}
+
+.menuSection .menuItem .itemText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.menuSection .menuItem .itemText .itemName {
+    font-size: 1.5vw;
+}
+
+.menuSection .menuItem .itemText .itemDesc {
+    font-size: 0.8rem;
+    flex-grow: 1;
+}
+
+.menuSection .menuItem .itemText .itemPrice {
+    text-align: end;
+    justify-self: flex-end;
 }

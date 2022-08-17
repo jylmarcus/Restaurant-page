@@ -3,7 +3,7 @@ function createContact(){
     contact.classList.add('tabSection');
 
     const phone = document.createElement('p');
-    phone.textContent = '📞7777777';
+    phone.textContent = 'Mognet Number: 📞7777777';
 
     const address = document.createElement('p');
     address.textContent = `Wherever you need us to be, kupo!`
