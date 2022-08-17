@@ -8,8 +8,8 @@ function createContact(){
     const address = document.createElement('p');
     address.textContent = `Wherever you need us to be, kupo!`
 
-    phone.appendChild(phone);
-    address.appendChild(address);
+    contact.appendChild(phone);
+    contact.appendChild(address);
 
     return contact;
 }
