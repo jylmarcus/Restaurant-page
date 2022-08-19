@@ -7,6 +7,9 @@ function setInactive(){
 
 function setActive(element) {
     element.classList.add('active');
+    if(element.classList.contains('hover')){
+        element.classList.remove('hover');
+    }
 }
 
 function onClick(){
