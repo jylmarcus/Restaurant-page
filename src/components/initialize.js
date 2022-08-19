@@ -2,7 +2,7 @@ import createHeader from "./header";
 import createNav from "./nav";
 import createTabContent from "./tabContent";
 import loadHome from "../tabs/home";
-import loadMenu from "../tabs/menu";
+import buttonEvents from "./buttonEvents";
 
 function initialize(){
     const content = document.getElementById('content');
@@ -15,7 +15,11 @@ function initialize(){
     content.appendChild(nav);
     content.appendChild(tabContent);
 
-    loadMenu();
+    const homeButton = document.getElementById('homeButton');
+
+    loadHome();
+    buttonEvents.setActive(homeButton);
+
 };
 
 export default initialize;

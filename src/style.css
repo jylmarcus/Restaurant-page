@@ -68,7 +68,7 @@ nav button{
 
 .menuSection{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0,1fr));
     gap: 0.5rem;
 }
 
@@ -107,6 +107,9 @@ nav button{
 .menuSection .menuItem .itemText .itemDesc {
     font-size: 0.8rem;
     flex-grow: 1;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menuSection .menuItem .itemText .itemPrice {
